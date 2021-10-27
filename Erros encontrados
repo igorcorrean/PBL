@@ -1,0 +1,24 @@
+  Dois Labels diferentes representando a mesma coisa(Teclado , memória e PWM) 
+    Solução:
+    label 3.3v foi substituído por 3V3
+
+  Pinagem do LCD Invertida-> posição do LCD transladada de 180º
+
+    Solução:
+    Inverter conexões no layout da PCB
+    
+  Pinos Led+ e Led- do LCD(JHD16A2) sem conexão com os sinais de +5v e GND, respectivamente
+    Solução:
+    Conectar os dois pinos às distribuições dos sinais de +5v e GND
+    
+  Conexões Rx e Tx do MCP com o PIC invertidas
+    Solução:
+    Inverter as conexões
+  
+  Conexão incorreta entre PIC e 24LC512(Pino 27 não é pino de comunicação I2C)
+
+    Solução:
+    Conectar o SCL do pino 25 à memória.
+    Obs.: Teclado substituído do pino 25 para o 27
+    
+   
